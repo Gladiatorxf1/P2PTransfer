@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+📂 P2P File Transfer 🚀
+A decentralized, secure, and fast peer-to-peer file transfer platform. Share files directly without relying on central servers, ensuring privacy and encryption.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔹 Features
+✅ Peer-to-Peer (P2P) Transfer – Direct file sharing without intermediaries.
+✅ Secure & Encrypted – End-to-end encryption for privacy.
+✅ No File Size Limits – Transfer large files effortlessly.
+✅ Cross-Platform Support – Works across devices and browsers.
+✅ Fast & Reliable – Efficient data transfer without bottlenecks.
 
-Currently, two official plugins are available:
+🚀 How It Works
+Upload a file to generate a secure link.
+Share the link with the recipient.
+The recipient downloads the file directly from your device.
+🛠 Tech Stack
+Frontend: HTML, CSS, JavaScript (React/Next.js)
+Backend: Node.js, Express
+P2P Communication: WebRTC / Socket.io
+Security: End-to-end encryption
+📌 Installation
+Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copy
+Edit
+git clone https://github.com/your-username/p2p-file-transfer.git
+cd p2p-file-transfer
+Install dependencies:
 
-## Expanding the ESLint configuration
+bash
+Copy
+Edit
+npm install
+Start the server:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+bash
+Copy
+Edit
+npm start
+📜 License
+This project is open-source and available under the MIT License.
